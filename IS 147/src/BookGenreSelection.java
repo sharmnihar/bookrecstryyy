@@ -366,5 +366,246 @@ public class BookGenreSelection {
                 System.out.println("\nNo recommendations for the invalid choice.");
                 break;
         }
+System.out.println("\nChoose a number for the book price?");
+            int bookNumber = scanner.nextInt();
+            while(bookNumber<1 || bookNumber > 5)
+
+    {
+        System.out.println("\nNo recommendations for the invalid choice.");
+        break;
+    }
+            System.out.println("\nChoose a number for the book price?");
+            int bookNumber = scanner.nextInt();
+            while(bookNumber < 1 || bookNumber > 5)
+
+    {
+        System.out.println("\nInvalid Number. Please choose a valid number for this")
+        bookNumber = scanner.nextInt();
+    }
+
+            do {
+                System.out.print("\nEnter the number of the book you want to know the price of: ");
+                bookNumber = scanner.nextInt();
+
+                if (bookNumber == 1) {
+                    System.out.println("Game of Thrones Price Options:");
+                    System.out.println("1. Hardcover: $36");
+                    System.out.println("2. Paperback: $18");
+                } else if (bookNumber == 2) {
+                    System.out.println("The Hobbit Price Options:");
+                    System.out.println("1. Hardcover: $28.70");
+                    System.out.println("2. Paperback: $17.99");
+                } else if (bookNumber == 3) {
+                    System.out.println("Be sure Price Options:");
+                    System.out.println("1. Hardcover: $29.99");
+                    System.out.println("2. Paperback: $19.99");
+                } else if (bookNumber == 4) {
+                    System.out.println("The eye of the world Price Options:");
+                    System.out.println("1. Hardcover: $35.99");
+                    System.out.println("2. Paperback: $18.99");
+                } else if (bookNumber == 5) {
+                    System.out.println("Witch King Price Options:");
+                    System.out.println("1. Hardcover: $28.99");
+                    System.out.println("2. Paperback: $18.99");
+                } else {
+                    System.out.println("Invalid book number. Please enter a valid book number.");
+                }
+            } while (bookNumber < 1 || bookNumber > 5);
+
+        } else {
+            System.out.println("You chose not to see book prices.");
+        }
+    }
+}
+
+
+// book prices
+
+        System.out.println("\nChoose a number for the book price?");
+        int bookNumber = scanner.nextInt();
+        while(bookNumber < 1 || bookNumber > 5) {
+        System.out.println("\nInvalid Number. Please choose a valid number for the book price.");
+        bookNumber = scanner.nextInt();
+        }
+        switch (genre){
+
+        case"Fantasy Fiction":
+        if(bookNumber==1)
+        System.out.println("Game of Thrones by George R. R. Martin \nHardcover: $36 \nPaperback: $18");
+
+        else if(bookNumber==2)
+        System.out.println("The Hobbit by John Tolkien \nHardcover: $28.70 \nPaperback: $17.99");
+
+        else if(bookNumber==3)
+        System.out.println("Be Sure by Seanan McGuire \nHardcover: $29.99 \nPaperback: $19.99");
+
+        else if(bookNumber==4)
+        System.out.println("The Eye of the World by Robert Jordan \nHardcover: $35.99 \nPaperback: $18.99");
+
+        else if(bookNumber==5)
+        System.out.println("Witch King by Martha Wells \nHardcover: $28.99 \nPaperback: $18.99 ");
+        else
+        System.out.println("Invalid Number.");
+        break;
+
+        case"Historical Fiction":
+        if(bookNumber==1)
+        System.out.println("The Duke and I (Bridgerton Series #1) by Julia Quinn \nHardcover: $20.99 \nPaperback: $14.99");
+
+        else if(bookNumber==2)
+        System.out.println("The Book Thief by Markus Zusak \nHardcover: $13.69 \nPaperback: $12.99");
+
+        else if(bookNumber==3)
+        System.out.println("Stone Blind by Natalie Haynes \nHardcover: $24.99 \nPaperback: $18.99");
+
+        else if(bookNumber==4)
+        System.out.println("The World and All That It Holds by Aleksander Hemon \nHardcover: $28 \nPaperback: $19");
+
+        else if(bookNumber==5)
+        System.out.println("The Armor of Light by Ken Follett \nHardcover: $38 \nPaperback: $16.95");
+        else
+        System.out.println("Invalid Number.");
+        break;
+
+        case"Thriller/Horror":
+        if(bookNumber==1)
+        System.out.println("Salem’s lot by Stephen King \nHardcover: $35.99 \nPaperback: $20");
+
+        else if(bookNumber==2)
+        System.out.println("The Shining by Stephen King \nHardcover: $22.99 \nPaperback: $17");
+
+        else if(bookNumber==3)
+        System.out.println("Haunted by Chuck Palahniuk \nHardcover: $31.79 \nPaperback: $17");
+
+        else if(bookNumber==4)
+        System.out.println("Our Share of Night by Mariana Enríquez \nHardcover: $26.09 \nPaperback: $18.99");
+
+        else if(bookNumber==5)
+        System.out.println("Ghost Story by Peter Straub \nHardcover: $28.33 \nPaperback: $14.99");
+
+        else
+        System.out.println("Invalid Number.");
+        break;
+
+        case"Non-Fiction":
+        if(bookNumber==1)
+        System.out.println("The Sixth Extinction by Elizabeth Kolbert \nHardcover: $11.33 \nPaperback: $13.19");
+
+        else if(bookNumber==2)
+        System.out.println("The Year of Magical Thinking by Joan Didion \nHardcover: $28 \nPaperback: $17");
+
+        else if(bookNumber==3)
+        System.out.println("No Logo by Naomi Klein \nHardcover: $15.57 \nPaperback: $14.39");
+
+        else if(bookNumber==4)
+        System.out.println("Birthday Letters by Ted Hughes \nHardcover: $11.70 \nPaperback: $11.59");
+
+        else if(bookNumber==5)
+        System.out.println("Dreams From my Father by Barack Obama \nHardcover: $16.59 \nPaperback: $10.73");
+
+        else
+        System.out.println("Invalid Number.");
+        break;
+
+        case"Comic Books":
+        if(bookNumber==1)
+        System.out.println("Ant Man by Stan Lee \nHardcover: $50 \nPaperback:$37.49");
+
+        else if(bookNumber==2)
+        System.out.println("Anti-Venom by Dan Slott \nHardcover: $56.73 \nPaperback: $27.99");
+
+        else if(bookNumber==3)
+        System.out.println("Akira by Katsuhiro Otomo \nHardcover: $35.99 \nPaperback: $29.99");
+
+        else if(bookNumber==4)
+        System.out.println("Batman by Bob Kane \nHardcover: $52 \nPaperback: $15");
+
+        else if(bookNumber==5)
+        System.out.println("Blue is the Warmest Color by Jul Maroh \nHardcover: $26.71 \nPaperback: $16.67");
+
+        else
+        System.out.println("Invalid Number.");
+        break;
+
+        case"Self-Help":
+        if(bookNumber==1)
+        System.out.println("The Mountain is You by Brianna Wiest \nHardcover: $35.11 \nPaperback: $17.99");
+
+        else if(bookNumber==2)
+        System.out.println("Atomic Habits by James Clear \nHardcover: $13.79 \nPaperback: $6.79");
+
+        else if(bookNumber==3)
+        System.out.println("The Power of Self-Discipline by Brian Tracy \nHardcover:10.95 \nPaperback: $4.46");
+
+        else if(bookNumber==4)
+        System.out.println("The Power of Letting Go by John Purkiss \nHardcover: $15.99 \nPaperback: $9.36");
+
+        else if(bookNumber==5)
+        System.out.println("The Power of Now by Eckhart Tolle \nHardcover: $12.99 \nPaperback: $4.68");
+
+      case"Young Adult":
+          if(bookNumber==1)
+              System.out.println("The Summer of Broken Rules by K.L. Walther \nHardcover: $8.77 \nPaperback:$8.77")
+
+        else if(bookNumber==2)
+    System.out.println("The Ballad of Songbirds and Snakes by Suzanne Collins \nHardcover: 21.99 \nPaperback:$15.59")
+
+        else if(bookNumber==3)
+    System.out.println("A Wizard of EarthSea by Ursula K. Le Guin" \nHardcover: $58.09 \nPaperback: $9.89)
+
+        else if(bookNumber==4)
+    System.out.println("The Hobbit by John Tolkien") \nHardcover: $6.49 \nPaperback: $2.99)
+
+        else if(bookNumber==5)
+    System.out.println("Lord of The Flies By William Golding") \nHardcover: $10.95 \nPaperback: $2.99)
+
+        case"Manga":
+            if(bookNumber==1)
+    System.out.println("One Piece by Eiichiro Oda" \nHardcover: $19.99 \nPaperback: $10.99)
+        else if(bookNumber==2)
+    System.out.println("Naruto by Masashi Kishimoto" \nHardcover: $13.99 \nPaperback: $11.50)
+        else if(bookNumber==3)
+    System.out.println("Sand Land by Akira Toriyama" \nHardcover: $16.99 \nPaperback: $11.99)
+        else if(bookNumber==4)
+    System.out.println("Shuna's Journey by Hayao Miyazaki" \nHardcover: $21.09 \nPaperback:$19.36)
+        else if(bookNumber==5)
+    System.out.println("All You Need is Kill by Hiroshi Sakurazaka" \nHardcover:16.99 \nPaperback: $13.99)
+
+        case"Mystery":
+            if(bookNumber==1)
+    System.out.println("A Good Girl's Guide to Murder by Holly Jackson" \nHardcover: $12.88 \nPaperback: $10.99)
+        else if(bookNumber==2)
+    System.out.println("The Surgeon by Tess Gerritsen" \nHardcover: $6 \nPaperback: $1.26)
+        else if(bookNumber==3)
+    System.out.println("One of Us is Lying by Karen M. McManus" \nHardcover: $10.39 \nPaperback: $9.50)
+        else if(bookNumber==4)
+    System.out.println("The Silent Patient by Alex Michaelides" \nHardcover: $14.70 \nPaperback: $5.61)
+        else if(bookNumber==5)
+    System.out.println("We Were Liars by E. Lockhart" \nHardcover: $14.29 \nPaperback: $5.99)
+
+        case"Cookbooks":
+            if(bookNumber==1)
+    System.out.println("Dessert Person by Claire Saffitz" \nHardcover: $48.59 \nPaperback: $20.49)
+        else if(bookNumber==2)
+    System.out.println("From Crook to Cook by Snoop Dogg") \nHardcover: $24.95 \nPaperback: $14.08)
+        else if(bookNumber==3)
+    System.out.println("Salt Fat Acid Heat by Samin Nosrat") \nHardcover: $26.87 \nPaperback: $20.00)
+        else if(bookNumber==4)
+    System.out.println("Half Baked Harvest by Tieghan Gerard") \nHardcover: $29.99 \nPaperback: $23.99)
+        else if(bookNumber==5)
+    System.out.println("The Modern Vegetarian Kitchen by Peter Berley") \nHardcover: $31.00 \nPaperback: $24.99)
+
+        case"Adult Dark Romance":
+            if(booknumber==1)
+    System.out.println("Haunting Adeline by H.D. Carlton" \nHardcover: $36.00 \nPaperback: $13.13)
+        else if(bookNumber==2)
+    System.out.println("A Touch of Darkness by Scarlett St, Clair" \nHardcover: $21.38 \nPaperback: $9.99)
+        else if(bookNumber==3)
+    System.out.println("Twisted Love by Ana Huang" \nHardcover: $24.00 \nPaperback: $10.59)
+        else if(bookNumber==4)
+    System.out.println("Twisted Hate by Ana Huang" \nHardcover: $25.00 \nPaperback: $10.59)
+        else if(bookNumber==5)
+    System.out.println("Twisted Games by Ana Huang" \nHardcover: $23.00 \nPaperback: $10.21)
+
     }
 }
